@@ -1,13 +1,15 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BuildingABeam
 {
+    /// <summary>
+    /// Methods for standardisation 
+    /// </summary>
     class VSTVUtils
     {
+        /// <summary>
+        /// Normalized numbers base table
+        /// </summary>
         public static double[] NormalizedRows = new double[]{
             1.00, 1.06, 1.12, 1.18,
             1.25, 1.32, 1.40, 1.50,
@@ -22,6 +24,13 @@ namespace BuildingABeam
             10.00,
         };
 
+        /// <summary>
+        /// Normalize number to specified row (R5, R10, R20, R40)
+        /// </summary>
+        /// <param name="number">source number</param>
+        /// <param name="row">specified row (5, 10, 20, 40)</param>
+        /// <param name="digest">number of digest after point</param>
+        /// <returns></returns>
         public static double NormalizeNumber(double number, int row, int digest)
         {
             double numberStart = number;
