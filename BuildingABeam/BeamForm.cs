@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -45,6 +46,7 @@ namespace BuildingABeam
 
         private void UpdateParameters()
         {
+            PathToBeam.Text = Path.GetFullPath(RingBeam.DefaultDocPath);
             try
             {
                 RingBeam.externalDiameter = Double.Parse(ExternalDiameter.Text);

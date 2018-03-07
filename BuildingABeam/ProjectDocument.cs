@@ -19,6 +19,12 @@ namespace BuildingABeam
 
         public const string workPath = "./";
         public const string docName = "RingBeam.SLDPRT";
+        public string DefaultDocPath {
+            get
+            {
+                return workPath + docName;
+            }
+        }
 
         public string pathToBeam;
 
