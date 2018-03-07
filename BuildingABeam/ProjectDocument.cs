@@ -17,7 +17,7 @@ namespace BuildingABeam
         public double length;
         public double volume;
 
-        public const string workPath = "D:/sapr/beams/";
+        public const string workPath = "./";
         public const string docName = "RingBeam.SLDPRT";
 
         public string pathToBeam;

@@ -71,7 +71,8 @@ namespace BuildingABeam
                 RingBeam.pathToBeam = PathToBeam.Text;
                 RingBeam.Build(UpdateState);
                 UnblockInput();
-            } else
+            }
+            else
             {
                 MessageBox.Show("Выберите " + ProjectDocument.docName);
             }
@@ -101,16 +102,18 @@ namespace BuildingABeam
                     if (tb.Text.IndexOf(',') >= 0 && (key == ',' || key == '.'))
                     {
                         e.Handled = true;
-                    } else if (key== '.')
+                    }
+                    else if (key == '.')
                     {
                         e.KeyChar = ',';
                         base.OnKeyPress(e);
                     }
-                } else
+                }
+                else
                 {
                     e.Handled = true;
                 }
-                
+
             }
             else
             {
@@ -124,7 +127,7 @@ namespace BuildingABeam
 
         }
 
-        private void BlockInput(bool state=true)
+        private void BlockInput(bool state = true)
         {
             BeamLength.ReadOnly = state;
             Depth.ReadOnly = state;

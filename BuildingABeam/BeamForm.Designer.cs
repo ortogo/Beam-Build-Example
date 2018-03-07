@@ -138,7 +138,6 @@
             this.BeamLength.TabIndex = 11;
             this.BeamLength.Text = "300";
             this.BeamLength.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            
             // 
             // progressBar1
             // 
@@ -189,7 +188,7 @@
             // 
             this.SelectBeam.FileName = "...";
             // 
-            // Form1
+            // BeamForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -209,7 +208,8 @@
             this.Controls.Add(this.Build);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "Form1";
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Name = "BeamForm";
             this.Text = "Балка кольцо";
             ((System.ComponentModel.ISupportInitialize)(this.BeamPic)).EndInit();
             this.ResumeLayout(false);
